@@ -48,6 +48,7 @@ In remote processing mode, the ReportViewer control uses the following assemblie
 
 * **Microsoft.ReportViewer.WebForms.dll**: Contains the ReportViewer code, which you need to use ReportViewer in your page. A reference for this assembly is added to your project when you drop a ReportViewer control onto an ASP.NET page in your project.
 * **Microsoft.ReportViewer.Common.dll**: Contains classes used by the ReportViewer control at run time. It is not automatically added to your project.
+* **Microsoft.ReportViewer.ProcessingObjectModel.DLL**: Required For **Microsoft.ReportViewer.Common.dll**. It is not automatically added to your project.
 
 ### To add a reference to Microsoft.ReportViewer.Common
 * Right-click your project’s **References** node and select **Add Reference**, select the assembly in the .NET tab, and click **OK**.
@@ -56,6 +57,9 @@ In remote processing mode, the ReportViewer control uses the following assemblie
 1. In the **References** folder, click the Microsoft.ReportViewer.Common assembly so that its properties appear in the Properties pane.
 2. In the Properties pane, set **Copy Local** to True.
 3. Repeat steps 1 and 2 for Microsoft.ReportViewer.WebForms.
+4. Copy **Microsoft.ReportViewer.ProcessingObjectModel.DLL** From GAC.
+5. Add **Microsoft.ReportViewer.ProcessingObjectModel.DLL** as reference to your project and Repeat step 2 and 3.
+
 
 ### To get ReportViewer Language Pack
 1. Install the appropriate Microsoft Report Viewer 2012 Runtime redistributable package from [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=317386).
